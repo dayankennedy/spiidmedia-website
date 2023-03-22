@@ -10,7 +10,6 @@ environ.Env.read_env()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
@@ -21,7 +20,6 @@ SECRET_KEY = 'django-insecure-$=$@p*24kyqb9ft&93+(#px!z#y3&8vp-_@#2wvl@585i64!^k
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
-
 
 # Application definition
 
@@ -76,12 +74,9 @@ WSGI_APPLICATION = 'spiidMedia.wsgi.application'
 #     }
 # }
 
-
-
 DATABASES = {
     'default': dj_database_url.parse(env('DATABASE_URL'))
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
@@ -100,7 +95,6 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
@@ -123,8 +117,6 @@ STATICFILES_DIRS=[
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
-
 
 # whitenoise configuration
 

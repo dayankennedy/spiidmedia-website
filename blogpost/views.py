@@ -7,6 +7,11 @@ from .models import *
 
 
 def base(request):
+
+    
+
+
+
     return render(request, 'blogpost/base.html')
 
 
