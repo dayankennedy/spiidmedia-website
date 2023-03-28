@@ -25,14 +25,13 @@ ALLOWED_HOSTS = ["*"]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
-    'django.contrib.auth',
+    'django.contrib.auth',       
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blogpost'
 ]
-
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     "whitenoise.middleware.WhiteNoiseMiddleware",
@@ -118,7 +117,7 @@ STATICFILES_DIRS=[
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-# whitenoise configuration
+# whitenoise configuration for static files     (CSS, JavaScript, Images)django version 4.1 above
 
 STORAGES = {
     # ...
